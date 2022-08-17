@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Cauculadora IMC</title>
+  </head>
+  <body>
+    <main class="corpo">
+      <h1>Descubra qual o seu IMC</h1>
+      <form action="" method="post">
+        <p>
+          <label for="altura">Digite sa altura:</label>
+          <input
+            type="number"
+            name="altura"
+            id="altura"
+            maxlength="1"
+            required
+          />
+        </p>
+        <p>
+          <label for="peso">Digite seu Peso:</label>
+          <input type="number" name="peso" id="peso" maxlength="1" />
+        </p>
+        <label for="result">Resultado</label>
+        <div class="resultado" id="result">Resultado</div>
+        <p>
+          <input
+            id="bottom"
+            type="submit"
+            value="Caucular"
+            onclick="caucular()"
+            required
+          />
+        </p>
+      </form>
+    </main>
+
+    <footer>Desenvolvido por <a href="#">Gonçalves</a></footer>
+  </body>
+</html>

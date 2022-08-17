@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  background-color: bisque;
+}
+main{
+  text-align: center;
+  height: 97vh;
+  margin-bottom: 3px;
+}
+form{
+ width: 30vw;
+ margin: auto;
+}
+.resultado{
+  background-color: rgb(255, 255, 255);
+  width: 30vw;
+  margin: auto;
+}
+p{
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5em;
+  font-weight: bolder;
+
+}
+#bottom{
+  font-size: 28px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+}
+footer{
+  background-color: green;
+padding-bottom: 6px;
+text-align: center;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bolder;
+color: white;
+}
+a{
+  text-decoration: none;
+  color: green;
+  background-color: white;
+  border-radius: 5px;
+  
+}
+
