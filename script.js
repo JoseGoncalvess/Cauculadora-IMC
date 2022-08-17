@@ -22,7 +22,7 @@ function handleButtomClick() {
 
   var imc = cauculo_imc(peso, altura)
   var formated_imc = imc.toFixed(2).replace('.', ',')
-
   imc_result.textContent = formated_imc
 }
+
 start()
