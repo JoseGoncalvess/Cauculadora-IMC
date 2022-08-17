@@ -1,29 +1,28 @@
 function start() {
-  var buttomcauculate_imc = document.querySelector('#Buttom-imc')
+  var buttomcauculate_imc = document.querySelector('#buttom_cauculate_imc')
   buttomcauculate_imc.addEventListener('click', handleButtomClick)
-  var inputpeso = document.querySelector('#1peso')
-  var inputpeso = document.querySelector('#1altura')
-
-  inputpeso.addEventListener('input', handleButtomClick)
-  inputpeso.addEventListener('input', handleButtomClick)
-
   handleButtomClick()
-  function cauculo_imc(ipeso, ialtura) {
-    return ipeso / (ialtura * ialtura)
-  }
+  var input_altura = document.querySelector('#input_altura')
+  var input_peso = document.querySelector('#input_peso')
+
+  input_altura.addEventListener('input', handleButtomClick)
+  input_peso.addEventListener('input', handleButtomClick)
 }
 
+function cauculo_imc(peso, altura) {
+  return peso / (altura * altura)
+}
 function handleButtomClick() {
-  var alt = document.getElementById('1altura')
-  var pes = document.getElementById('1peso')
-  var res = document.getElementById('1res')
+  var input_altura = document.querySelector('#input_altura')
+  var input_peso = document.querySelector('#input_peso')
+  var imc_result = document.querySelector('#imc_result')
 
-  var altura = Number(alt.value)
-  var peso = Number(pes.value)
+  var altura = Number(input_altura.value)
+  var peso = Number(input_peso.value)
 
   var imc = cauculo_imc(peso, altura)
-  var formated_imc = imc.toFixed(2).repleace('.', ',')
+  var formated_imc = imc.toFixed(2).replace('.', ',')
 
-  res.textContent = formated_imc
+  imc_result.textContent = formated_imc
 }
 start()
