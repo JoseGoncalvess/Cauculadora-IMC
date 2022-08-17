@@ -10,35 +10,35 @@
   <body>
     <main class="corpo">
       <h1>Descubra qual o seu IMC</h1>
-      <form action="" method="post">
-        <p>
-          <label for="altura">Digite sa altura:</label>
-          <input
-            type="number"
-            name="altura"
-            id="altura"
-            maxlength="1"
-            required
-          />
-        </p>
-        <p>
-          <label for="peso">Digite seu Peso:</label>
-          <input type="number" name="peso" id="peso" maxlength="1" />
-        </p>
-        <label for="result">Resultado</label>
-        <div class="resultado" id="result">Resultado</div>
-        <p>
-          <input
-            id="bottom"
-            type="submit"
-            value="Caucular"
-            onclick="caucular()"
-            required
-          />
-        </p>
-      </form>
+      <p>
+        <label for="altura">Digite sa altura:</label>
+        <input type="number" name="altura" id="1altura" step="0.01" required />
+      </p>
+      <p>
+        <label for="peso">Digite seu Peso:</label>
+        <input type="number" name="peso" id="1peso" step="0.1" required />
+      </p>
+
+      <p><button id="Buttom-imc" onclick="caucular()">Caucular Imc</button></p>
+
+      <br />
+      <p>Seu imc é de <strong id="1res"></strong></p>
     </main>
 
     <footer>Desenvolvido por <a href="#">Gonçalves</a></footer>
+    <script>
+      function caucular() {
+        var alt = document.getElementById('1altura')
+        var pes = document.getElementById('1peso')
+        var res = document.getElementById('1res')
+
+        var altura = Number(alt.value)
+        var peso = Number(pes.value)
+        s = peso / (altura * altura)
+
+        var imc = s.toFixec(2)
+        res.innerHTML = `${imc}`
+      }
+    </script>
   </body>
 </html>
