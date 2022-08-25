@@ -8,14 +8,24 @@
     <title>Cauculadora IMC</title>
   </head>
   <body>
-    <h1>IMC</h1>
-    <label for="input_altura">Altura em (m):</label>
-    <input type="number" name="input_altura" id="txtaltura" step="0.01" /><br />
-    <label for="input_peso">Peso em (Kg):</label>
-    <input type="number" name="input_peso" id="txtpeso" step="0.1" />
-    <p><button id="buttom_cauculate_imc">Caucular IMC</button></p>
-    <p id="Paragrafo-result">O seu IMC é <strong id="txtresult"></strong></p>
-    <p>Voce se encontra <strong id="sit_imc"></strong></p>
+    
+    <main>
+      <article id="campo">
+        <h1>IMC</h1>
+        <label for="input_altura">Altura em (m):</label>
+        <input
+          type="number"
+          name="input_altura"
+          id="txtaltura"
+          step="0.01"
+        /><br />
+        <label for="input_peso">Peso em (Kg):</label>
+        <input type="number" name="input_peso" id="txtpeso" step="0.1" />
+        <button id="buttom_cauculate_imc">Caucular IMC</button>
+        <p id="Paragrafo-result">O seu IMC é <strong id="txtresult"></strong></p>
+      </article>
+      <div id="ress"></div>
+    </main></p>
 
     <script defer src="script.js"></script>
   </body>
