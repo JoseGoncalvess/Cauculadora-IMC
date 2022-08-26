@@ -22,7 +22,9 @@ h1{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: normal;
 }
-
+#buttom_cauculate_imc{
+display: none;
+}
 
 article{
   background-color: white;

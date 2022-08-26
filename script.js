@@ -44,11 +44,4 @@ function handleButtomClick() {
   }
 }
 
-function reset() {
-  var input_altura = document.querySelector('#txtaltura').reset()
-  var input_peso = document.querySelector('#txtpeso').reset()
-  var imc_result = document.querySelector('#txtresult').reset()
-  var msg = (document.querySelector('#ress').value = '')
-}
-
 start()
