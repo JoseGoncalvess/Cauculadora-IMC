@@ -3,7 +3,7 @@ var pess = 120
 
 s = pess / (alt * alt)
 
-if (s >= 16 && s < 16.9) {
+if ((s = 16 && s < 16.9)) {
   console.log(`Seu pelso IMC é ${s}, Esta Muito abaixo do peso!`)
 } else if (s >= 17 && s < 18.9) {
   console.log(`Seu pelso IMC é ${s}, Esta abaixo do peso!`)

@@ -25,13 +25,30 @@ function handleButtomClick() {
   var formated_imc = imc.toFixed(2).replace('.', ',')
   imc_result.textContent = formated_imc
 
-  if (imc >= 10 && imc < 13) {
-    msg.innerHTML = `Abaixo do peso`
-  } else if (imc <= 30) {
-    msg.innerHTML = `Peso normal`
+  if (imc < 16.9) {
+    msg.innerHTML = `Você se encontra Muito Abaixo do Peso`
+  } else if (imc > 17 && imc <= 18.49) {
+    msg.innerHTML = `Você se encontra Abaixo do Peso`
+  } else if (imc > 18.5 && imc <= 24.99) {
+    msg.innerHTML = `Você se encontra no Peso Normal`
+  } else if (imc > 25 && imc <= 29.99) {
+    msg.innerHTML = `Você se encontra Acima do Peso`
+  } else if (imc > 30 && imc <= 34.99) {
+    msg.innerHTML = `Você se encontra em Obesidade Grau I`
+  } else if (imc > 35 && imc <= 40) {
+    msg.innerHTML = `Você se encontra Obesidade Grau II`
+  } else if (imc > 40 && imc < 100) {
+    msg.innerHTML = `Você se encontra Obesidade Grau III`
   } else {
-    msg.innerHTML = `Acima`
+    msg.innerHTML = ``
   }
+}
+
+function reset() {
+  var input_altura = document.querySelector('#txtaltura').reset()
+  var input_peso = document.querySelector('#txtpeso').reset()
+  var imc_result = document.querySelector('#txtresult').reset()
+  var msg = (document.querySelector('#ress').value = '')
 }
 
 start()
