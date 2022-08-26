@@ -40,7 +40,7 @@ function handleButtomClick() {
   } else if (imc > 40 && imc < 100) {
     msg.innerHTML = `Você se encontra Obesidade Grau III`
   } else {
-    msg.innerHTML = ``
+    msg.innerHTML = `Caucule agora seu Imc`
   }
 }
 
