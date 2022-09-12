@@ -84,7 +84,6 @@ function handleButtomClick() {
       img.setAttribute('src', './img/obesidade-m+.png')
     } else if (imc > 40 && imc < 500) {
       img.setAttribute('src', './img/obesidade-m+.png')
-    } else {
     }
   } else {
   }
